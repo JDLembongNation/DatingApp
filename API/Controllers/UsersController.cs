@@ -11,7 +11,7 @@ namespace API.Controllers
     public class UsersController : BaseApiController
     {
         private readonly DataContext context;
-        public UsersController(DataContext context)
+        public UsersController(DataContext context) //Dependency Injection
         {
             this.context = context;
         }
